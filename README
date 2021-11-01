@@ -10,7 +10,7 @@
 - etc/openvpn/majordomo-ca.cert
 - etc/openvpn/majordomo.conf
 
-Поменять в /etc/openvpn/login.conf логи и пароль, после запустить сервис
+Поменять в /etc/openvpn/login.conf логин и пароль, после запустить сервис
 OpenVPN:
 
 #+begin_src sh
