@@ -27,6 +27,15 @@ OpenVPN:
 
 ** FAQ
 
+*** Резолвинг доменных имен
+
+В случае, если OpenVPN клиент не настроил резолвинг, то можно настроить в
+ручную:
+
+#+begin_example
+  echo 'nameserver 172.16.102.2' | sudo tee /etc/resolv.conf
+#+end_example
+
 *** OpenVPN 2.5
 
 https://www.opennet.ru/opennews/art.shtml?num=53981
