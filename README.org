@@ -71,3 +71,11 @@ data-ciphers-fallback.
 3. Запустить клиент с ярылка OpenVPN Gui на рабочем столе.
 4. Внизу в правой части панели должен быть значок монитора и замочка, по нему правой кнопкой нажать, появится меню, выбрать запустить. [[https://user-images.githubusercontent.com/7709598/147750708-c9588571-297e-430d-89d7-14f1da1a6ccc.png][Скриншот значка]]
 5. В форме логина и пароля указать такие же логин и пароль как от https://hms-billing.intr/
+
+* MacOS
+
+1. Скачать и установить клиент [[https://tunnelblick.net/][Tunnelblick | Free open source OpenVPN VPN client server software for macOS]]
+2. Скачать файл https://raw.githubusercontent.com/mjuh/utils-openvpn/master/vpn_windows.ovpn
+3. Перенести конфигурационный файл в OpenVPN клиент.
+
+Видео инструкция [[https://www.youtube.com/watch?v=a-MP7BkUPmM][MacOS OpenVPN tunnelblick.net - YouTube]]
