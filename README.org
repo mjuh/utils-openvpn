@@ -64,6 +64,35 @@ data-ciphers-fallback.
   sudo systemctl restart openvpn@majordomo.service
 #+end_src
 
+*** Ubuntu 22.04
+
+#+begin_example
+  ● openvpn-client@majordomo.service - OpenVPN tunnel for majordomo
+       Loaded: loaded (/lib/systemd/system/openvpn-client@.service; disabled; vendor preset: enabled)
+       Active: active (running) since Thu 2022-05-19 15:31:43 MSK; 2s ago
+         Docs: man:openvpn(8)
+               https://community.openvpn.net/openvpn/wiki/Openvpn24ManPage
+               https://community.openvpn.net/openvpn/wiki/HOWTO
+     Main PID: 100452 (openvpn)
+       Status: "Pre-connection initialization successful"
+        Tasks: 1 (limit: 18912)
+       Memory: 1.9M
+          CPU: 14ms
+       CGroup: /system.slice/system-openvpn\x2dclient.slice/openvpn-client@majordomo.service
+               └─100452 /usr/sbin/openvpn --suppress-timestamps --nobind --config majordomo.conf
+  мая 19 15:31:43 buh-4 openvpn[100452]: UDP link remote: [AF_INET]78.108.80.230:1194
+  мая 19 15:31:43 buh-4 openvpn[100452]: TLS: Initial packet from [AF_INET]78.108.80.230:1194, sid=48a734f5 e71e6931
+  мая 19 15:31:43 buh-4 openvpn[100452]: VERIFY ERROR: depth=0, error=CA signature digest algorithm too weak: C=RU, ST=RU, L=Saint-Petersburg, O=Majordomo Ltd., CN=office, emailAddress=sup>
+  мая 19 15:31:43 buh-4 openvpn[100452]: OpenSSL: error:0A000086:SSL routines::certificate verify failed
+  мая 19 15:31:43 buh-4 openvpn[100452]: TLS_ERROR: BIO read tls_read_plaintext error
+  мая 19 15:31:43 buh-4 openvpn[100452]: TLS Error: TLS object -> incoming plaintext read error
+  мая 19 15:31:43 buh-4 openvpn[100452]: TLS Error: TLS handshake failed
+#+end_example
+
+#+begin_example
+  tls-cipher "DEFAULT:@SECLEVEL=0"
+#+end_example
+
 * Windows
 
 1. Скачать и установить клиент [[https://swupdate.openvpn.org/community/releases/OpenVPN-2.5.4-I604-amd64.msi]]
