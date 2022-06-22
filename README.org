@@ -96,7 +96,7 @@ data-ciphers-fallback.
 * Windows
 
 1. Скачать и установить клиент [[https://swupdate.openvpn.org/community/releases/OpenVPN-2.5.4-I604-amd64.msi]]
-2. Скачать файл https://raw.githubusercontent.com/mjuh/utils-openvpn/master/vpn_windows.ovpn и положить его в папку =C:\Program Files\OpenVPN\config=
+2. Скачать файл https://raw.githubusercontent.com/mjuh/utils-openvpn/master/vpn_windows.ovpn и положить его в папку =C:\Program Files\OpenVPN\config= или в =C:\Users\YOUR_USER_NAME\OpenVPN\config=
 3. Запустить клиент с ярылка OpenVPN Gui на рабочем столе.
 4. Внизу в правой части панели должен быть значок монитора и замочка, по нему правой кнопкой нажать, появится меню, выбрать запустить. [[https://user-images.githubusercontent.com/7709598/147750708-c9588571-297e-430d-89d7-14f1da1a6ccc.png][Скриншот значка]]
 5. В форме логина и пароля указать такие же логин и пароль как от https://hms-billing.intr/
